@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root{
+  --primary:#C89B3C;
+  --secondary:#111827;
+  --bg:#F8F8F8;
+  --text:#444444;
+  --white:#FFFFFF;
+}
+
+@keyframes heroZoom {
+
+    from{
+        transform:scale(1.12);
+    }
+
+    to{
+        transform:scale(1);
+    }
+
+}
+
+.hero-pagination .swiper-pagination-bullet{
+    width:32px;
+    height:2px;
+    background:#fff;
+    opacity:.2;
+    border-radius:10px;
+    margin:0 8px!important;
+}
+
+.hero-pagination .swiper-pagination-bullet-active{
+    width:60px;
+    background:#fff;
+    opacity:1;
+    position:relative;
+}
+
+.hero-pagination .swiper-pagination-bullet-active::after{
+    content:"";
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:#E31717;
+    position:absolute;
+    right:-5px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.hero-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Testimonials Pagination */
+
+.testimonial-pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.testimonial-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 !important;
+  opacity: 1;
+  background: #006B43;
+  transition: all 0.4s ease;
+}
+
+.testimonial-pagination .swiper-pagination-bullet-active {
+  width: 28px;
+  border-radius: 999px;
+  background: #006B43;
+}
