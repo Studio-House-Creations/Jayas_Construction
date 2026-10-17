@@ -12,7 +12,7 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 
-import projects from "./projectData";
+import projects from "./ProjectData.js";
 
 export default function ProjectDetails() {
 
