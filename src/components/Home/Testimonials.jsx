@@ -1,6 +1,7 @@
 import { createPortal } from "react-dom";
 import { useRef, useEffect, useState } from "react";
 
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -20,6 +21,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import hero1 from "../../assets/heroImage1.webp";
 import hero3 from "../../assets/heroImage3.webp";
 import hero4 from "../../assets/balajinagar.webp";
 import hero5 from "../../assets/heroImage6.webp";
@@ -65,13 +67,12 @@ const testimonials = [
   },
   {
     id: 4,
-    name: "Sophia Grace",
-    project: "Interior Design",
+    name: "K.K.Kottai Client",
+    project: "Residential Villa",
     rating: 5,
-    review:
-      "Beautiful interiors with premium finishing. The team listened carefully to our ideas and delivered exactly what we imagined.",
+    review: "Beautiful interiors with premium finishing and exceptional attention to every detail. The team took the time to understand our ideas, preferences, and requirements, transforming our vision into a stunning reality. From the initial planning to the final touches, everything was handled with professionalism and care. The quality of materials, elegant designs, and flawless execution truly exceeded our expectations. Their creativity and commitment to perfection made the entire experience smooth and enjoyable. We are extremely happy with the results and highly recommend their interior design services to anyone looking for stylish, functional, and premium interiors.",
     company: "Google Review",
-    image: client4,
+    image: hero1,
   },
 ];
 
